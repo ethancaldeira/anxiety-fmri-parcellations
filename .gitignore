@@ -1,0 +1,33 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+.DS_Store
+.env
+/tmp/
+
+# Data, intermediate graphs/labels and results
+*.npy
+*.npz
+*.bin
+*.pkl
+*.h5
+*.nii.gz
+data/*
+results/
+
+# Split files and logs (may contain subject IDs); data/gsp_split.json is
+# generated locally by make_gsp_split.py
+*.json
+*.log
+
+# Allow the mask file into the repo
+!masks/grey_matter_mask.nii.gz
+
+# Never commit subject lists or phenotypic/participant data
+*.csv
+*.tsv
+subjects*.txt
+*subjects*.txt
+*participants*
